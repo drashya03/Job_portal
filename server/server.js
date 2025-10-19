@@ -20,7 +20,7 @@ await connectDB()
 app.use(cors())
 app.use(express.json())
 
-
+app.post('/webhooks',clerkWebhooks)
 // app.use(Sentry.Handlers.requestHandler());
 
 // Routes
@@ -39,7 +39,7 @@ app.get("/debug-sentry", function mainHandler(req, res) {
 });
 
 
-app.post('/webhooks',clerkWebhooks)
+
 
 
 
