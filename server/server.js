@@ -26,8 +26,13 @@ app.use(express.json())
 // Routes
 
 app.get('/',(req,res)=> {
-    res.send("Api Working");
+    res.json({ message: "API is working", status: "success" });
 });
+
+
+// app.get("/api/jobs", (req, res) => {
+//   res.json([{ title: "Frontend Developer" }, { title: "DevOps Engineer" }]);
+// });
 
 app.get("/debug-sentry", function mainHandler(req, res) {
   throw new Error("My first Sentry error!");
