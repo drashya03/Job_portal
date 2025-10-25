@@ -12,6 +12,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@clerk/express": "^1.7.41",
     "@sentry/integrations": "^7.114.0",
     "@sentry/profiling-node": "^10.20.0",
     "bcrypt": "^6.0.0",
@@ -23,6 +24,7 @@
     "mongoose": "^8.19.1",
     "multer": "^2.0.2",
     "nodemon": "^3.1.10",
+    "react-toastify": "^11.0.5",
     "svix": "^1.77.0",
     "webhooks": "^0.0.4"
   }
